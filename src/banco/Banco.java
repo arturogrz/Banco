@@ -28,15 +28,10 @@ public class Banco {
             case 3://Retirar saldo
                 System.out.println("Ingresa la cantidad a retitirar: " );
                   double retiro = entrada.nextDouble();
-                  
-                  
                   if(retiro <= saldo_cliente){
                       saldo_cliente = saldo_cliente - retiro;
                       
                   }else{System.out.println("No puedes retirar esa cantidad" );}
-                  
-                  
-                  
                 break;   
             default:
                 System.out.println("Numero/Letra no valido. Intenta de nuevo" );
